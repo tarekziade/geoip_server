@@ -129,4 +129,8 @@ if __name__ == "__main__":
     pool = Pool(settings.MAX_CONNECTS)
     server = GeoServer((settings.HOST, settings.PORT),
                 config=settings, spawn=pool)
-    server.serve_forever()
+    try:
+        server.serve_forever()
+    except KeyboardInterrupt:
+        print "Bye!"
+
