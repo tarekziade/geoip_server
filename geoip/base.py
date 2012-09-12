@@ -62,6 +62,8 @@ class GeoIP(object):
     # Initially, pointers to GeoIP file references are NULL.
     _city = None
     _country = None
+    _city_v6 = None
+    _country_v6 = None
 
     def __init__(self, path=None, cache=0,
             country=None, city=None,
