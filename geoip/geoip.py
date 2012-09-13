@@ -55,7 +55,7 @@ class GeoServer(StreamServer):
 
     def _return(self, label='reply', obj={}):
         reply = json.dumps({label: obj})
-        self.log.info("Returning: %s" % reply)
+        #self.log.info("Returning: %s" % reply)
         return "%s\n" % reply
 
     def checkConnection(self, socket):
