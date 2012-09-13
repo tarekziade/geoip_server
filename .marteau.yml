@@ -3,7 +3,6 @@ test: GeoIPTest.test_geoip
 script: loadtest.py
 xml: simple-bench.xml
 wdir: loadtest
-email: jrconlin@mozila.com
 nodes: 9
 deps:
     - gevent
